@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Répertoire d'outils de vibecoding : assistants IA, créateurs d'applications, agents de code, tests et déploiement.">
+  <meta name="theme-color" content="#10121b">
+  <title>Codex Prime — Outils de vibecoding</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b0d14;--panel:#131724;--panel2:#191f30;--text:#f3f5ff;--muted:#a4aec5;--line:#293149;--accent:#a78bfa;--cyan:#67e8f9}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#25204a 0,transparent 36rem),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:.08em}.brand span{color:var(--accent)}.top a{color:var(--muted);text-decoration:none;font-size:.9rem}
+    header{padding:64px 0 38px}.eyebrow{color:var(--cyan);text-transform:uppercase;font-size:.76rem;letter-spacing:.18em;font-weight:800}.hero h1{font-size:clamp(2.4rem,6vw,4.8rem);line-height:1.04;letter-spacing:-.055em;max-width:850px;margin:14px 0 20px}.hero h1 span{color:var(--accent)}.hero p{max-width:700px;color:var(--muted);font-size:1.08rem}
+    .stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.pill{border:1px solid var(--line);background:#111523b8;border-radius:999px;padding:7px 13px;color:#d8dcef;font-size:.85rem}
+    .controls{position:sticky;top:0;z-index:2;padding:14px 0;background:#0b0d14eF;backdrop-filter:blur(14px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.controlrow{display:flex;gap:12px;flex-wrap:wrap}.search{flex:1;min-width:220px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--text);padding:13px 15px;font:inherit}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{background:var(--panel);color:var(--muted);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;font:inherit;font-size:.88rem}.filter[aria-pressed=true]{background:#312856;border-color:var(--accent);color:white}
+    .section{padding:34px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:18px}.section h2{font-size:1.55rem;letter-spacing:-.03em;margin:0}.sectionhead p{margin:4px 0 0;color:var(--muted);font-size:.92rem}.count{color:var(--muted);font-size:.85rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:14px}.tool{background:linear-gradient(145deg,var(--panel),#10131e);border:1px solid var(--line);border-radius:16px;padding:19px;display:flex;flex-direction:column;min-height:185px;transition:transform .18s,border-color .18s}.tool:hover{transform:translateY(-3px);border-color:#7665b8}.tooltop{display:flex;justify-content:space-between;align-items:center;gap:10px}.tool h3{font-size:1.08rem;margin:0}.tag{font-size:.7rem;border:1px solid #3c355f;background:#211c39;color:#d8ccff;border-radius:999px;padding:4px 8px;white-space:nowrap}.tool p{color:var(--muted);font-size:.92rem;margin:12px 0 18px}.visit{margin-top:auto;color:var(--cyan);font-size:.9rem;font-weight:700;text-decoration:none}.visit:hover{text-decoration:underline}.empty{display:none;padding:25px;color:var(--muted);border:1px dashed var(--line);border-radius:12px}footer{margin-top:36px;border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.88rem}footer a{color:var(--cyan)}.note{border-left:3px solid var(--accent);padding:12px 16px;background:#171429;border-radius:0 10px 10px 0;color:#c9c4dd;font-size:.9rem;margin-top:24px}
+    @media(max-width:600px){header{padding-top:42px}.top{align-items:flex-start}.sectionhead{align-items:flex-start;flex-direction:column}.tool{min-height:0}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="top" aria-label="Navigation principale">
+      <a class="brand" href="index.html" aria-label="Codex Prime accueil">CODEX <span>PRIME</span></a>
+      <a href="https://github.com/Scap-Mehdi/awesome-vibecoding" target="_blank" rel="noopener noreferrer">Répertoire source ↗</a>
+    </nav>
+    <header class="hero">
+      <div class="eyebrow">Le kit du créateur augmenté</div>
+      <h1>Les outils pour <span>vibecoder.</span></h1>
+      <p>Explore une sélection d'outils pour transformer une idée en application avec l'IA : éditeurs intelligents, générateurs d'apps, agents de code, intégrations, tests et déploiement.</p>
+      <div class="stats"><span class="pill">✦ Sélection organisée</span><span class="pill">⌕ Recherche instantanée</span><span class="pill">↗ Liens vers les sites officiels</span></div>
+      <div class="note">Conseil : commence avec un seul outil, avance par petites étapes et vérifie le code généré avant de publier ton application.</div>
+    </header>
+  </div>
+  <div class="controls">
+    <div class="wrap">
+      <div class="controlrow">
+        <input id="search" class="search" type="search" placeholder="Rechercher un outil ou un usage…" aria-label="Rechercher un outil">
+        <div class="filters" aria-label="Filtrer par catégorie">
+          <button class="filter" data-filter="all" aria-pressed="true">Tout</button>
+          <button class="filter" data-filter="ide" aria-pressed="false">Éditeurs & agents</button>
+          <button class="filter" data-filter="apps" aria-pressed="false">Création d'apps</button>
+          <button class="filter" data-filter="context" aria-pressed="false">Contexte & intégrations</button>
+          <button class="filter" data-filter="quality" aria-pressed="false">Tests & sécurité</button>
+          <button class="filter" data-filter="deploy" aria-pressed="false">Déploiement</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="wrap">
+    <section class="section" aria-labelledby="tools-title">
+      <div class="sectionhead"><div><h2 id="tools-title">Bibliothèque d'outils</h2><p>Choisis un outil pour consulter son site ou son dépôt officiel.</p></div><span class="count" id="count" aria-live="polite"></span></div>
+      <div class="grid" id="grid">
+        <article class="tool" data-category="ide" data-search="cursor éditeur ide assistant code génération"><div class="tooltop"><h3>Cursor</h3><span class="tag">Éditeur IA</span></div><p>Éditeur de code avec chat, modifications multi-fichiers et assistance contextuelle.</p><a class="visit" href="https://www.cursor.com/" target="_blank" rel="noopener noreferrer">Visiter Cursor ↗</a></article>
+        <article class="tool" data-category="ide" data-search="windsurf codeium ide cascade éditeur"><div class="tooltop"><h3>Windsurf</h3><span class="tag">Éditeur IA</span></div><p>Environnement de développement pensé autour d'un agent de programmation.</p><a class="visit" href="https://windsurf.com/" target="_blank" rel="noopener noreferrer">Visiter Windsurf ↗</a></article>
+        <article class="tool" data-category="ide" data-search="claude code terminal agent anthropic"><div class="tooltop"><h3>Claude Code</h3><span class="tag">Agent CLI</span></div><p>Agent qui explore un projet, modifie des fichiers et aide à exécuter des tâches de développement.</p><a class="visit" href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener noreferrer">Documentation ↗</a></article>
+        <article class="tool" data-category="ide" data-search="openai codex cli agent terminal"><div class="tooltop"><h3>OpenAI Codex</h3><span class="tag">Agent de code</span></div><p>Agent de programmation pour aider à construire, comprendre et corriger des projets.</p><a class="visit" href="https://openai.com/codex/" target="_blank" rel="noopener noreferrer">Découvrir Codex ↗</a></article>
+        <article class="tool" data-category="ide" data-search="github copilot assistant code ide"><div class="tooltop"><h3>GitHub Copilot</h3><span class="tag">Assistant</span></div><p>Suggestions de code et assistance intégrées aux outils de développement compatibles.</p><a class="visit" href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">Visiter Copilot ↗</a></article>
+        <article class="tool" data-category="ide" data-search="aider terminal git pair programming open source"><div class="tooltop"><h3>Aider</h3><span class="tag">Agent CLI</span></div><p>Programmation en binôme dans le terminal avec intégration Git et différents modèles.</p><a class="visit" href="https://github.com/Aider-AI/aider" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="ide" data-search="cline agent ide navigateur terminal open source"><div class="tooltop"><h3>Cline</h3><span class="tag">Agent IA</span></div><p>Agent de développement capable d'aider avec les fichiers, commandes et tâches navigateur.</p><a class="visit" href="https://github.com/cline/cline" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="ide" data-search="gemini cli google terminal agent"><div class="tooltop"><h3>Gemini CLI</h3><span class="tag">Agent CLI</span></div><p>Agent de code en ligne de commande de Google, utilisable selon les conditions d'accès du service.</p><a class="visit" href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="ide" data-search="kiro aws specification spec driven ide"><div class="tooltop"><h3>Kiro</h3><span class="tag">IDE</span></div><p>Environnement orienté spécifications, tâches et tests assistés par IA.</p><a class="visit" href="https://kiro.dev/" target="_blank" rel="noopener noreferrer">Visiter Kiro ↗</a></article>
+        <article class="tool" data-category="ide" data-search="goose agent open source cli desktop mcp"><div class="tooltop"><h3>Goose</h3><span class="tag">Agent</span></div><p>Agent extensible avec interface terminal ou bureau et intégrations d'outils.</p><a class="visit" href="https://github.com/block/goose" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+
+        <article class="tool" data-category="apps" data-search="bolt new stackblitz application web prompt"><div class="tooltop"><h3>Bolt.new</h3><span class="tag">Créateur d'apps</span></div><p>Prototypage d'applications web à partir d'instructions en langage naturel.</p><a class="visit" href="https://bolt.new/" target="_blank" rel="noopener noreferrer">Visiter Bolt ↗</a></article>
+        <article class="tool" data-category="apps" data-search="lovable full stack application web supabase"><div class="tooltop"><h3>Lovable</h3><span class="tag">Créateur d'apps</span></div><p>Création d'applications web à partir d'une description, avec options d'intégration backend.</p><a class="visit" href="https://lovable.dev/" target="_blank" rel="noopener noreferrer">Visiter Lovable ↗</a></article>
+        <article class="tool" data-category="apps" data-search="v0 vercel interface react ui"><div class="tooltop"><h3>v0</h3><span class="tag">UI & React</span></div><p>Génération d'interfaces et de composants web à partir de prompts ou de références visuelles.</p><a class="visit" href="https://v0.app/" target="_blank" rel="noopener noreferrer">Visiter v0 ↗</a></article>
+        <article class="tool" data-category="apps" data-search="replit agent application navigateur hébergement"><div class="tooltop"><h3>Replit</h3><span class="tag">En ligne</span></div><p>Construire et faire évoluer des applications dans un environnement de développement en ligne.</p><a class="visit" href="https://replit.com/" target="_blank" rel="noopener noreferrer">Visiter Replit ↗</a></article>
+        <article class="tool" data-category="apps" data-search="dyad local desktop application modèle ia"><div class="tooltop"><h3>Dyad</h3><span class="tag">Local</span></div><p>Outil de création d'applications à exécuter localement avec des fournisseurs de modèles configurables.</p><a class="visit" href="https://github.com/dyad-sh/dyad" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="apps" data-search="onlook design interface visuel code"><div class="tooltop"><h3>Onlook</h3><span class="tag">Design & code</span></div><p>Édition visuelle d'interfaces en lien avec le code de l'application.</p><a class="visit" href="https://www.onlook.com/" target="_blank" rel="noopener noreferrer">Visiter Onlook ↗</a></article>
+
+        <article class="tool" data-category="context" data-search="context7 documentation bibliothèques mcp"><div class="tooltop"><h3>Context7</h3><span class="tag">MCP</span></div><p>Fournit de la documentation de bibliothèques au contexte des assistants de code.</p><a class="visit" href="https://github.com/upstash/context7" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="context" data-search="github mcp serveur dépôts issues pull requests"><div class="tooltop"><h3>GitHub MCP Server</h3><span class="tag">Intégration</span></div><p>Connecte les agents aux dépôts, issues et workflows GitHub via MCP.</p><a class="visit" href="https://github.com/github/github-mcp-server" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="context" data-search="openspec spécifications développement piloté"><div class="tooltop"><h3>OpenSpec</h3><span class="tag">Spécifications</span></div><p>Structure les exigences et changements pour les workflows de développement assistés par IA.</p><a class="visit" href="https://github.com/Fission-AI/OpenSpec" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="context" data-search="supabase mcp base de données"><div class="tooltop"><h3>Supabase MCP</h3><span class="tag">Base de données</span></div><p>Connecte les assistants à des tâches de configuration et de gestion Supabase.</p><a class="visit" href="https://github.com/supabase/mcp" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="context" data-search="filesystem mcp fichiers local"><div class="tooltop"><h3>Filesystem MCP</h3><span class="tag">MCP</span></div><p>Exemple de serveur MCP pour donner un accès contrôlé aux fichiers du projet.</p><a class="visit" href="https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+
+        <article class="tool" data-category="quality" data-search="playwright mcp microsoft tests navigateur automatisation"><div class="tooltop"><h3>Playwright MCP</h3><span class="tag">Tests web</span></div><p>Automatisation de navigateur pour explorer et tester les applications web.</p><a class="visit" href="https://github.com/microsoft/playwright-mcp" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="quality" data-search="qodo revue code tests qualité"><div class="tooltop"><h3>Qodo</h3><span class="tag">Revue de code</span></div><p>Assistance IA pour l'analyse et la revue de code.</p><a class="visit" href="https://www.qodo.ai/" target="_blank" rel="noopener noreferrer">Visiter Qodo ↗</a></article>
+        <article class="tool" data-category="quality" data-search="pr agent revue pull request github"><div class="tooltop"><h3>PR-Agent</h3><span class="tag">Revue de PR</span></div><p>Outils communautaires pour analyser et commenter les pull requests.</p><a class="visit" href="https://github.com/The-PR-Agent/pr-agent" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="quality" data-search="semgrep sécurité analyse code"><div class="tooltop"><h3>Semgrep</h3><span class="tag">Sécurité</span></div><p>Analyse de code et détection de problèmes de sécurité dans les projets.</p><a class="visit" href="https://semgrep.dev/" target="_blank" rel="noopener noreferrer">Visiter Semgrep ↗</a></article>
+        <article class="tool" data-category="quality" data-search="sentry erreurs monitoring debugging"><div class="tooltop"><h3>Sentry</h3><span class="tag">Diagnostic</span></div><p>Suivi des erreurs applicatives et aide au diagnostic des incidents.</p><a class="visit" href="https://sentry.io/" target="_blank" rel="noopener noreferrer">Visiter Sentry ↗</a></article>
+
+        <article class="tool" data-category="deploy" data-search="cloudflare déploiement infrastructure"><div class="tooltop"><h3>Cloudflare</h3><span class="tag">Cloud</span></div><p>Outils et services pour publier des applications et gérer des ressources cloud.</p><a class="visit" href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer">Visiter Cloudflare ↗</a></article>
+        <article class="tool" data-category="deploy" data-search="publish my hébergement site statique"><div class="tooltop"><h3>Publish.my</h3><span class="tag">Publication</span></div><p>Publication orientée agents pour des sites statiques.</p><a class="visit" href="https://publish.my/" target="_blank" rel="noopener noreferrer">Visiter Publish.my ↗</a></article>
+        <article class="tool" data-category="deploy" data-search="e2b sandbox cloud agent environnement sécurisé"><div class="tooltop"><h3>E2B</h3><span class="tag">Sandbox</span></div><p>Environnements isolés dans le cloud pour exécuter du code et des agents IA.</p><a class="visit" href="https://github.com/e2b-dev/E2B" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+        <article class="tool" data-category="deploy" data-search="xcodebuildmcp apple ios build"><div class="tooltop"><h3>XcodeBuildMCP</h3><span class="tag">Apple</span></div><p>Outils pour construire, exécuter et déboguer des projets sur les plateformes Apple.</p><a class="visit" href="https://github.com/getsentry/XcodeBuildMCP" target="_blank" rel="noopener noreferrer">Dépôt GitHub ↗</a></article>
+      </div>
+      <p class="empty" id="empty">Aucun outil ne correspond à cette recherche. Essaie un autre mot-clé ou filtre.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">Codex Prime · Répertoire de découverte du vibecoding.<br>Liste inspirée de <a href="https://github.com/Scap-Mehdi/awesome-vibecoding" target="_blank" rel="noopener noreferrer">awesome-vibecoding</a>. Les outils, tarifs et conditions d'accès peuvent évoluer ; consulte toujours les sites officiels.</div></footer>
+  <script>
+    (() => {
+      const search = document.getElementById('search');
+      const cards = [...document.querySelectorAll('.tool')];
+      const buttons = [...document.querySelectorAll('.filter')];
+      const count = document.getElementById('count');
+      const empty = document.getElementById('empty');
+      let category = 'all';
+      function update() {
+        const q = search.value.trim().toLocaleLowerCase('fr');
+        let shown = 0;
+        cards.forEach(card => {
+          const matches = (category === 'all' || card.dataset.category === category) &&
+            (card.innerText + ' ' + card.dataset.search).toLocaleLowerCase('fr').includes(q);
+          card.hidden = !matches;
+          if (matches) shown++;
+        });
+        count.textContent = shown + ' outil' + (shown > 1 ? 's' : '');
+        empty.style.display = shown ? 'none' : 'block';
+      }
+      search.addEventListener('input', update);
+      buttons.forEach(button => button.addEventListener('click', () => {
+        category = button.dataset.filter;
+        buttons.forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+        update();
+      }));
+      update();
+    })();
+  </script>
+</body>
+</html>
